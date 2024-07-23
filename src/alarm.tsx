@@ -2,15 +2,17 @@ import react from "react";
 import { useState } from "react";
 import "./alarm.css"
 import controlAlarm from "./controlAlarm";
-import nextAlarm from "./nextAlarm";
+
+import Clock from "./clock";
+
 
 function alarm(){
     return(
  <div className="alarm">
     <div className="logo"></div>
     
-    {nextAlarm()}
-
+    {Clock()}
+    
     {controlAlarm()}
  </div>
     );
