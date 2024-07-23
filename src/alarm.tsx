@@ -1,12 +1,13 @@
 import react from "react";
 import { useState } from "react";
+import "./alarm.css"
 import controlAlarm from "./controlAlarm";
-
 
 function alarm(){
     return(
  <div className="alarm">
-    <h1>pagina alarmes aqui</h1>
+    <div className="logo"></div>
+
     {controlAlarm()}
  </div>
     );
