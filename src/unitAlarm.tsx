@@ -25,7 +25,7 @@ function UnitAlarm() {
 
 
         if (timeDifference < 0) {
-            timeDifference += 24 * 60 * 60 * 1000; /
+            timeDifference += 24 * 60 * 60 * 1000;  
         }
 
 
