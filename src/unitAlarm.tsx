@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
+import { useEffect } from 'react';
 
 function UnitAlarm() {
     const [selectedTime, setSelectedTime] = useState('');
 
-    const handleTimeChange = (event: any) => {
+    const handleTimeChange = (event: any) => { //não sei como tipar isso
         setSelectedTime(event.target.value);
     };
 
@@ -32,13 +33,22 @@ function UnitAlarm() {
         setTimeout(() => {
             alert(`O alarme está tocando! Horário escolhido foi: ${selectedTime}`);
         }, timeDifference);
+        
+        
     };
 
+    
+    
+
     return (
-        <div>
-            <label htmlFor="meeting-time">Escolha um horário para o alarme:</label>
+        <div className='confgAlarm'>
+
+
+
+            <label  htmlFor="meeting-time">horário para o alarme:</label>
             <br />
-            <input
+            <input 
+                
                 type="time"
                 id="meeting-time"
                 value={selectedTime}
@@ -46,6 +56,7 @@ function UnitAlarm() {
             />
             <button onClick={handleButtonClick}>Definir Alarme</button>
             <p>Horário selecionado: {selectedTime}</p>
+            <p>Próximo alarme em: {"timer entre agora e o alarme"}</p>        
         </div>
     );
 }

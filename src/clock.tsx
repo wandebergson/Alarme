@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import AnalogClock from './analog';
+import UnitAlarm from './unitAlarm';
 
 const Clock = () => {
   const [time, setTime] = useState(new Date());
@@ -15,9 +17,10 @@ const Clock = () => {
 
   return (
     <div>
-      <h1>Hora atual:</h1>
-      <h2>{formattedTime}</h2>
       
+      <h2>{formattedTime}</h2>
+      {AnalogClock()}
+      {UnitAlarm()}
     </div>
   );
 };

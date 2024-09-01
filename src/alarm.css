@@ -1,9 +1,19 @@
-.logo{
-    margin:auto;
-    width: 80px;
-    height: 80px;
-    border-radius: 40px;
+body{
+    
+     
+}
 
-    background-image: url('/home/wandebergson/Documentos/projeto alarme React/alarme/public/logoRelogio.png');
-    background-size: cover;
+.alarmBody{
+    padding-top: 2em;
+    margin:auto;
+    text-align: center;
+    background-color: rgb(170, 138, 96);
+    border-radius: 30%;
+    width: 18em;
+    height: 18em;
+}
+ 
+.confgAlarm {
+    background-color: rgb(182, 175, 167);
+    border-radius: 30em;
 }

@@ -10,8 +10,8 @@ import Clock from "./clock";
 
 function alarm(){
     return(
- <div className="alarm">
-    <div className="logo"></div>
+ <div className="alarmBody">
+    
     
     {Clock()}
     {UnitAlarm()}
